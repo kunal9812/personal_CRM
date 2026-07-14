@@ -12,10 +12,11 @@ function ProtectedRoute({ children }: { children: JSX.Element }) {
 
   if (isLoading) {
     return (
-      <div className="flex h-screen items-center justify-center bg-surface">
+      <div className="flex h-screen items-center justify-center bg-void">
         <div className="flex flex-col items-center gap-4">
-          <div className="w-10 h-10 rounded-xl accent-gradient animate-glow-pulse" />
-          <p className="text-ink-muted text-sm animate-pulse">Loading...</p>
+          <p className="font-display font-light text-2xl tracking-widest2 text-cream/30 uppercase animate-pulse">
+            Relate
+          </p>
         </div>
       </div>
     );
